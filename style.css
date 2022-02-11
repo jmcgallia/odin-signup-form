@@ -1,0 +1,135 @@
+:root {
+    --brown: #4B2D13;
+    --twine: #C4996E;
+    --danube: #79AFDA;
+    --steelBlue: #447FBA;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+.container {
+    background-color: lightgray;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+.image {
+    grid-column: 1 / 2;
+    background-image: url(img/castle-image.jpeg);
+}
+
+.image-header {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: gray;
+    opacity: .9;
+    top: 15%;
+    height: 6rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imageheader h1 {
+    margin: 0px;
+    width: 100%;
+    font-size: 5rem;
+    
+}
+
+.image-credits {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    top: 85%;
+}
+
+
+.content-area {
+    grid-column: 2 / 3;   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr 3fr;
+    background-color: var(--danube);   
+}
+
+.image,
+.content-area {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--brown);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+header {
+    padding: 30px 50px;
+    font: var(--brown);
+    display: grid;
+    align-items: center;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--steelBlue);
+    padding: 30px 50px;
+    box-shadow: 5px 1px;
+}
+
+input {
+    height: 26px;
+    width: 210px;
+    border-radius: 2px;
+}
+
+
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+
+footer {
+    padding: 30px 50px;
+}
+
+button {
+    width: 218px;
+    height: 16%;
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin-top: 3%;
+    font-size: 1.5rem;
+}
